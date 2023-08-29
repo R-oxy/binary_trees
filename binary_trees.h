@@ -4,6 +4,8 @@
 #include <stddef.h>
 #include <stdlib.h>
 
+#define MAX(left_height, right_height) ((left_height) > (right_height) ? (left_height) : (right_height))
+
 /**
  * struct binary_tree_s - Binary tree node
  *

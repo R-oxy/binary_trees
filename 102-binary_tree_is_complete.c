@@ -43,10 +43,13 @@ _Bool is_complete(const binary_tree_t *tree,
  */
 int binary_tree_is_complete(const binary_tree_t *tree)
 {
+	size_t size;
+	unsigned int i = 0;
+
 	if (tree == NULL)
 		return (0);
 
-	size_t size = binary_tree_size(tree);
+	size = binary_tree_size(tree);
 
-	return (is_complete(tree, 0, size));
+	return (is_complete(tree, i, size));
 }

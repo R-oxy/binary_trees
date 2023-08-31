@@ -60,5 +60,7 @@ _Bool is_complete(const binary_tree_t *tree, unsigned int index, size_t size);
 int binary_tree_is_complete(const binary_tree_t *tree);
 binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree);
 binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree);
+int is_bst(const binary_tree_t *tree, const binary_tree_t **prev);
+int binary_tree_is_bst(const binary_tree_t *tree);
 
 #endif /* _BINARY_TREES_H_ */

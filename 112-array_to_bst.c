@@ -21,8 +21,10 @@ bst_t *array_to_bst(int *array, size_t size)
 		{
 			while (root != NULL)
 			{
-				binary_tree_delete(root);
-				root = NULL;
+				bst_t *temp = root;
+
+				root = root->parent;
+				free(temp);
 			}
 			return (NULL);
 		}
